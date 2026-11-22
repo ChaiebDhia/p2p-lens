@@ -1,0 +1,12 @@
+# Value-model assumptions. These are ASSUMPTIONS, not measurements from the data.
+# Replace every number with figures from the organisation you are analysing.
+cost_per_change_eur: 12.0        # handling cost of one purchase-order change (about 20 minutes)
+changes_per_reworked_case: 1.5   # average number of changes on a reworked order
+late_fee_rate: 0.005             # penalty or lost-discount rate on the value of a late invoice
+duplicate_interception_rate: 0.25   # share of duplicate-invoice value that would otherwise be paid twice
+overbilling_recovery_rate: 0.30     # share of overbilling exposure that tighter matching would recover
+program_cost_eur: 250000.0       # one-off cost of the improvement program
+scenarios:                       # share of each issue the program fixes
+  conservative: 0.25
+  base: 0.5
+  optimistic: 0.75
