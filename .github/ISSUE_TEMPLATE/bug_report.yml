@@ -1,0 +1,21 @@
+name: Bug report
+description: Something is wrong or crashes
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the command you ran and the full error.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: input
+    id: version
+    attributes:
+      label: p2p-lens version (`p2p-lens --version`) and Python version
+    validations:
+      required: true
