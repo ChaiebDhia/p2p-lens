@@ -1,0 +1,16 @@
+site_name: p2p-lens
+site_description: Procure-to-pay process intelligence on SAP-style data
+repo_url: https://github.com/ChaiebDhia/p2p-lens
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Data model: data-model.md
+  - Methodology: methodology.md
+  - Value model: value-model.md
+  - Real data: real-data.md
+  - Performance: performance.md
+  - Process-mining concepts: process-mining-concepts.md
+  - Limitations: limitations.md
+docs_dir: docs
