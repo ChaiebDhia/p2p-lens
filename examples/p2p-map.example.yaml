@@ -1,0 +1,13 @@
+# Maps P2P roles to the activity names used in YOUR event log.
+# Run `p2p-lens analyze-log --log yourlog.xes --out out` first, read the variants table,
+# then list the real activity names under each role. Unlisted activities are ignored.
+requisition: ["Create Purchase Requisition"]
+order: ["Create Purchase Order"]
+release: ["Release Purchase Order"]
+change: ["Change Purchase Order"]
+goods_receipt: ["Post Goods Receipt"]
+invoice: ["Post Invoice Receipt"]
+payment: ["Clear Invoice (Payment)"]
+# Roles every case must contain to count as conforming (default: all mapped roles
+# except requisition and change).
+mandatory: [order, goods_receipt, invoice, payment]
